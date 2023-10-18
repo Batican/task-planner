@@ -1,0 +1,22 @@
+// SCSS Variables
+@import "variables";
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// Bootstrap Vue
+// @import '~bootstrap-vue/src/index.scss';
+// Toastr
+@import "~toastr/toastr";
+// // Fontawesome
+// @import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+// @import '~@fortawesome/fontawesome-free/scss/regular.scss';
+// @import '~@fortawesome/fontawesome-free/scss/solid.scss';
+// @import '~@fortawesome/fontawesome-free/scss/brands.scss';
+// Import Custom SB Admin 2 Mixins and Components
+@import "fonts";
+
+// Write your custom styling here
+@import "text";
+@import "background";
+@import "cursor";
+@import "custom";
