@@ -1,1 +1,170 @@
-// Write your custom styling here
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Fira sans', sans-serif;
+}
+
+body {
+	background-color: rgb(38, 35, 54);
+	color: #FFF;
+}
+
+main {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 2rem;
+}
+
+.landing {
+	display: flex;
+	justify-content: center;
+}
+
+main .header {
+	text-transform: capitalize;
+	margin-bottom: 0.5rem;
+	width: 800px;
+	display: flex;
+	justify-content: space-between;
+	color: white;
+}
+
+main h1 ~ p {
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+main .create-new {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+}
+
+main .create-new input {
+	appearance: none;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #FFF;
+	background-color: transparent;
+	color: #FFF;
+	font-size: 1.5rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	margin: 0;
+	transition: 0.4s;
+}
+
+main .create-new input:focus {
+	border-bottom-color: rgb(47, 214, 111);
+}
+
+
+
+main .tasks {
+	width: 100%;
+	max-width: 800px;
+	margin-top: 2rem;
+}
+
+main .tasks .task {
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	justify-content: space-between;
+	background-color: rgb(52, 47, 78);
+	padding: 1rem;
+	border-radius: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+main .tasks .task .buttons {
+	min-width: fit-content;
+	cursor: pointer;
+}
+
+.delete :hover {
+	color: red;
+}
+
+main .tasks .task button.delete {
+	background-color: crimson;
+	color: #EEE;
+}
+
+.tasks .task.is-complete {
+	opacity: 0.7;
+}
+
+.tasks .task.is-complete .content {
+	text-decoration: line-through;
+}
+
+.tasks .task .is-important {
+	color: yellow;
+}
+
+.instruction {
+	text-align: start;
+	width: 80%;
+}
+.instruction span {
+	color: cyan;
+}
+
+.create-textbox {
+	position: fixed;
+	bottom: 0;
+	width: 80%;
+	height: 50px;
+}
+
+.h-full {
+	height: 100%;
+}
+
+.m-bottom {
+	margin-bottom: 150px;
+}
+
+.search {
+	position: relative;
+	display: block;
+	width: 800px;
+	border-radius: 50px;
+	.search-icon {
+		position:absolute;
+		height: 50%;
+		margin-top: .5rem;
+		margin-left: 0.5rem;
+		opacity: 0.5;
+		color: #000;
+	}
+}
+
+.dropdown {
+	.dropdown-search {
+		position: relative;
+		display: block;
+		border-radius: 20px;
+		margin: 0 10px;
+
+		.dropdown-search-icon {
+			position:absolute;
+			height: 50%;
+			margin-top: .5rem;
+			margin-left: 0.5rem;
+			opacity: 0.5;
+			color: #000;
+		}
+	}
+	.dropdown-menu {
+		max-height: 200px;
+		overflow-y: auto;
+	}
+	
+}
